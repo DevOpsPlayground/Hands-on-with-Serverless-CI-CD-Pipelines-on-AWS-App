@@ -1,6 +1,6 @@
 version: 0.2
 
-env:
+#env:
 phases:
   install:
     commands:
@@ -21,6 +21,6 @@ phases:
     commands:
       - echo Entered the post_build phase...
       - echo Build completed on `date`
-artifacts:
-  files:
-    - target/messageUtil-1.0.jar
+# artifacts:
+#   files:
+#     - target/messageUtil-1.0.jar
