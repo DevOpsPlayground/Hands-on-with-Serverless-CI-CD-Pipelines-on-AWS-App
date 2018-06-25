@@ -1,6 +1,6 @@
 version: 0.2
 
-env:
+# env:
 phases:
   install:
     commands:
