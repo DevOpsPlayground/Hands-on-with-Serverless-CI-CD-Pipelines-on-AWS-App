@@ -6,6 +6,7 @@ phases:
       - aws cloudformation package --template-file template.yaml 
                                    --s3-bucket pg23appdeploybucket
                                    --output-template-file outputSamTemplate.yaml
+                                   --region eu-west-1
 artifacts:
   type: zip
   files:
