@@ -4,7 +4,7 @@ phases:
     commands:
       - npm install
       - aws cloudformation package --template-file template.yaml 
-                                   --s3-bucket $bucket-name
+                                   --s3-bucket pg23appdeploybucket
                                    --output-template-file outputSamTemplate.yaml
 artifacts:
   type: zip
