@@ -5,10 +5,10 @@ phases:
       - npm install
       - aws cloudformation package --template-file template.yaml 
                                    --s3-bucket pg23appdeploybucket
-                                   --output-template-file outputSamTemplate.yaml
+                                   --output-template-file output.yaml
                                    --region eu-west-1
 artifacts:
   type: zip
   files:
     - template.yaml
-    - outputSamTemplate.yaml
+    - output.yaml
