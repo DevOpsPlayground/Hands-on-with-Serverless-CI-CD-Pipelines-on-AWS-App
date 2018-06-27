@@ -3,10 +3,15 @@ phases:
   install:
     commands:
       - npm install
+  build:
+    commands:
+      - echo "Nothing to build here as it's node!"    
+  post_build:
+    commands:
       - aws cloudformation package --template-file template.yaml 
-                                   --s3-bucket pg23appdeploybucket
-                                   --output-template-file output.yaml
-                                   --region eu-west-1
+                                        --s3-bucket pg23appdeploybucket
+                                        --output-template-file output.yaml
+                                        --region eu-west-1
 artifacts:
   type: zip
   files:
