@@ -13,3 +13,8 @@ Resources:
           Properties:
             Path: /
             Method: GET
+
+Outputs:
+  Url:
+    Description: URL of your API endpoint
+    Value: !GetAtt HelloWorld.RootResourceId
