@@ -3,9 +3,6 @@ phases:
   install:
     commands:
       - npm install
-  pre_build:
-    commands:
-      - aws cloudformation validate-template --template-body file://./template.yaml --region eu-west-1
   build:
     commands:
       - echo "Nothing to build here as it's node!"    
