@@ -3,6 +3,11 @@ phases:
   install:
     commands:
       - npm install
+  pre-build:
+    commands:
+      - aws cloudformation validate-template --template-body file://./template.yaml --region eu-west-1
+  build:
+    commands:
       - aws cloudformation package --template-file template.yaml 
                                    --s3-bucket pg23appdeploybucket
                                    --output-template-file output.yaml
