@@ -1,5 +1,9 @@
 'use strict'
 const express = require('express')
 const app = express()
+<<<<<<< HEAD
+app.get('/', (req, res) => res.send('Hello World! - v1.1'))
+=======
 app.get('/', (req, res) => res.send('<html><b>Hello AGAIN World!</b></html>'))
+>>>>>>> changes
 module.exports = app
